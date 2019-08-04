@@ -1,0 +1,4 @@
+node_modules/**/*
+dist/images/**/*
+dist/styles/**/*
+dist/*.js*
