@@ -1,0 +1,39 @@
+@import "../styles/settings.scss";
+
+.hero {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(52, 73, 94, 0.8),
+      rgba(52, 73, 94, 0.8)
+    ),
+    url("../images/hero-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .content {
+    margin: auto;
+    grid-row-start: 2;
+
+    .title {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+
+    .subtitle {
+      font-size: 2.5rem;
+      font-weight: 100;
+      padding: 1rem;
+    }
+
+    .profile-picture {
+      width: 18rem;
+      border-radius: 100%;
+    }
+  }
+}

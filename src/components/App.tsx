@@ -1,10 +1,11 @@
 import * as React from "react";
 
+import { Hero } from "./Hero";
+
 import "./App.scss";
 
 export const App = () => (
   <div className="main">
-    <h1>Welcome to a new React App!</h1>
-    <img src={require("../images/React-icon.svg")} />
+    <Hero />
   </div>
 );
