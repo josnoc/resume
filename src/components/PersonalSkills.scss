@@ -1,0 +1,73 @@
+@import "../styles/settings.scss";
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .PersonalSkills {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    .hard-working,
+    .avant-grade,
+    .efficient,
+    .passionate,
+    .cooperative {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+  }
+}
+
+@media screen and (min-width: $small-screen-breakpoint) and (max-width: $desktop-breakpoint) {
+  .PersonalSkills {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+
+    .hard-working {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .efficient {
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+
+    .avant-grade{
+      grid-column-start: 5;
+      grid-column-end: 7;
+    }
+
+    .passionate {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .cooperative {
+      grid-column-start: 4;
+      grid-column-end: 6;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $small-screen-breakpoint) {
+  .PersonalSkills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    .hard-working,
+    .avant-grade {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .efficient,
+    .passionate {
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+
+    .cooperative {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+}
